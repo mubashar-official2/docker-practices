@@ -16,6 +16,39 @@
 3.  sudo chmod 666 /var/run/docker.sock
     allow premission to run this
 4.  docker version
-    
- 
+5.  systemctl start docker
+    this command is used for run docker
+6.  sudo chmod 666 /var/run/docker.sock
+    provide premission before download any image from docker hub
+7.  docker image pull alpine:latest
+    download official docker image
+8.  docker image pull aamirpinger/helloworld:latest
+    first is "aamirpiner" username and "helloworld" is "image" and "latest" is version of image
+9.  docker image ls 
+    is command which show all image which is donwnload on this system 
+10. docker images
+    this show all images with details
+11. docker image rm alpine:latest
+    this command will remove image "alpine:latest"
+12. docker images ls
+    this will coforms that delete image is delete or not
+13. docker run -it ammirpinger/helloworld:latest sh 
+    "-it" is for interective mode and "sh" for shell  you could use "sh" or bash 
 
+14. docker conainter ls -a 
+    this comannd is used for check all runing and stop containers
+15. docker conainter ls
+    this command is used to check only running conainters
+16. Ctrl + p + q
+    press this key to get terminal but do not stop container
+
+17. docker ps 
+    this command is used for list all container 
+
+18. docker ps -a 
+    to see all run and stop containers
+19. docker exec -it a21d9c01e37d bash
+    this command is used for go intective mode of runing containers when container is run than we use this command
+Note!
+        if we come back from interective mode with "Ctrl + p + q" if you go again this container in intective
+        mode than run "exit" your conainter will not stop.    
